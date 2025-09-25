@@ -14,11 +14,7 @@ body {
   height: 100vh;
   margin: 0;
   margin: 50px 0 0 0;
-}
-
-h1 {
-  margin-bottom: 25px;
-  color: #333;
+  box-sizing: border-box;
 }
 
 .container {
@@ -30,29 +26,53 @@ h1 {
   min-width: 350px;
 }
 
+h1 {
+  margin-bottom: 25px;
+  color: #4b4a4a;
+  text-align: center;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
+  text-transform: capitalize;
+}
+
+th {
+  font-weight: 600;
+  background: #bfdde9;
+  padding: 12px 10px;
+  color: rgb(59, 59, 59);
 }
 
 td {
-  padding: 12px 10px;
+  padding: 10px 8px;
   border-bottom: 1px solid #ddd;
   text-align: center;
 }
 
-.title {
-  font-weight: 600;
-  background: #f0f0f063;
-  text-align: left;
-}
-
-.value {
-  font-weight: 500;
-  color: #2c3e50;
-  min-width: 50px;
+tr:nth-of-type(even) {
+  background-color: rgb(241, 240, 240);
 }
 
 tr:hover {
   background-color: #ddd;
+}
+
+.title {
+  text-align: left;
+  padding: 0 0 0 20px;
+}
+
+.container h2 {
+  color: rgb(59, 59, 59);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.highestRated {
+  text-transform: capitalize;
+  font-style: italic;
+  color: rgb(141, 112, 219);
 }
